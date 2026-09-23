@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODSOFT Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <main class="app">
+        <section class="calculator" aria-label="Calculator">
+            <header class="calculator-header">
+                <svg class="brand-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                    <line x1="8" y1="6" x2="16" y2="6"></line>
+                    <line x1="16" y1="14" x2="16.01" y2="14"></line>
+                    <line x1="16" y1="10" x2="16.01" y2="10"></line>
+                    <line x1="16" y1="18" x2="16.01" y2="18"></line>
+                    <line x1="12" y1="14" x2="12.01" y2="14"></line>
+                    <line x1="12" y1="10" x2="12.01" y2="10"></line>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    <line x1="8" y1="14" x2="8.01" y2="14"></line>
+                    <line x1="8" y1="10" x2="8.01" y2="10"></line>
+                    <line x1="8" y1="18" x2="8.01" y2="18"></line>
+                </svg>
+                <div class="brand-text">
+                    <span class="brand-name">CODSOFT</span>
+                    <span class="brand-app">Calculator</span>
+                </div>
+            </header>
+            
+            <div class="display">
+                <div class="expression" id="expression" aria-hidden="true"></div>
+                <div class="current-value" id="current-value" aria-live="polite">0</div>
+            </div>
+            
+            <div class="keypad">
+                <button class="btn btn-clear" id="btn-clear" aria-label="Clear All">AC</button>
+                <button class="btn btn-delete" id="btn-delete" aria-label="Delete">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="20" height="20">
+                        <path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path>
+                        <line x1="18" y1="9" x2="12" y2="15"></line>
+                        <line x1="12" y1="9" x2="18" y2="15"></line>
+                    </svg>
+                </button>
+                <button class="btn btn-operator" data-action="operator" data-value="%" aria-label="Percentage">%</button>
+                <button class="btn btn-operator" data-action="operator" data-value="/" aria-label="Divide">÷</button>
+                
+                <button class="btn btn-number" data-action="number" data-value="7">7</button>
+                <button class="btn btn-number" data-action="number" data-value="8">8</button>
+                <button class="btn btn-number" data-action="number" data-value="9">9</button>
+                <button class="btn btn-operator" data-action="operator" data-value="*" aria-label="Multiply">×</button>
+                
+                <button class="btn btn-number" data-action="number" data-value="4">4</button>
+                <button class="btn btn-number" data-action="number" data-value="5">5</button>
+                <button class="btn btn-number" data-action="number" data-value="6">6</button>
+                <button class="btn btn-operator" data-action="operator" data-value="-" aria-label="Subtract">−</button>
+                
+                <button class="btn btn-number" data-action="number" data-value="1">1</button>
+                <button class="btn btn-number" data-action="number" data-value="2">2</button>
+                <button class="btn btn-number" data-action="number" data-value="3">3</button>
+                <button class="btn btn-operator" data-action="operator" data-value="+" aria-label="Add">+</button>
+                
+                <button class="btn btn-number btn-zero" data-action="number" data-value="0">0</button>
+                <button class="btn btn-number" data-action="decimal" data-value="." aria-label="Decimal">.</button>
+                <button class="btn btn-equals" id="btn-equals" aria-label="Equals">=</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

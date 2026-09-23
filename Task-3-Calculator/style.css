@@ -1,0 +1,232 @@
+/* 1. Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Variables */
+:root {
+    --primary: #2563EB;
+    --primary-hover: #1D4ED8;
+    --background: #F8FAFC;
+    --surface: #FFFFFF;
+    --text-primary: #0F172A;
+    --text-secondary: #64748B;
+    --border: #E2E8F0;
+    
+    --btn-number: #F1F5F9;
+    --btn-number-hover: #E2E8F0;
+    --btn-operator-bg: #DBEAFE;
+    --btn-operator-text: #1D4ED8;
+    --btn-clear-bg: #FEE2E2;
+    --btn-clear-text: #DC2626;
+    --btn-delete-bg: #F1F5F9;
+    --btn-delete-text: #64748B;
+}
+
+/* 3. Global styles */
+body {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: var(--background);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Page layout */
+.app {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* 5. Calculator */
+.calculator {
+    background-color: var(--surface);
+    width: 100%;
+    max-width: 380px;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05),
+                0 0 0 1px rgba(0, 0, 0, 0.02);
+}
+
+/* 6. Header */
+.calculator-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    color: var(--text-secondary);
+}
+
+.brand-icon {
+    width: 20px;
+    height: 20px;
+    stroke: var(--primary);
+}
+
+.brand-text {
+    display: flex;
+    gap: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.brand-name {
+    color: var(--primary);
+}
+
+/* 7. Display */
+.display {
+    background-color: var(--background);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.expression {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    min-height: 1.25rem;
+    word-break: break-all;
+    text-align: right;
+    width: 100%;
+}
+
+.current-value {
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    word-break: break-all;
+    text-align: right;
+    width: 100%;
+}
+
+/* 8. Buttons & Button variants */
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    border: none;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1; /* Makes buttons square by default */
+    transition: all 0.1s ease;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-zero {
+    grid-column: span 2;
+    aspect-ratio: auto;
+}
+
+.btn-number {
+    background-color: var(--btn-number);
+    color: var(--text-primary);
+}
+
+.btn-operator {
+    background-color: var(--btn-operator-bg);
+    color: var(--btn-operator-text);
+}
+
+.btn-equals {
+    background-color: var(--primary);
+    color: var(--surface);
+}
+
+.btn-clear {
+    background-color: var(--btn-clear-bg);
+    color: var(--btn-clear-text);
+}
+
+.btn-delete {
+    background-color: var(--btn-delete-bg);
+    color: var(--btn-delete-text);
+}
+
+/* 10. States */
+.btn:hover {
+    filter: brightness(0.95);
+}
+
+.btn-number:hover {
+    background-color: var(--btn-number-hover);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* 11. Responsive design */
+@media (max-width: 425px) {
+    .calculator {
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .keypad {
+        gap: 10px;
+    }
+    .display {
+        padding: 16px;
+    }
+    .current-value {
+        font-size: 2.25rem;
+    }
+    .btn {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .app {
+        padding: 0.5rem;
+    }
+    .calculator {
+        padding: 16px;
+    }
+    .keypad {
+        gap: 8px;
+    }
+    .btn {
+        border-radius: 8px;
+    }
+}
+
+/* 12. Accessibility/reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+        transition: none;
+    }
+    .btn:active {
+        transform: none;
+    }
+}
