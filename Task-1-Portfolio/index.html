@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070B14">
+  <meta name="description" content="Portfolio of Divyansh Verma, AI & ML Student and Software Developer.">
+  <title>Divyansh Verma | Software Developer & AI/ML Student</title>
+  
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Preload fonts for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-pattern"></div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="#home" class="logo-link" aria-label="Home">
+        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <rect width="100" height="100" fill="#070B14" rx="20" />
+          <path d="M25 30 h 15 a 20 20 0 0 1 20 20 a 20 20 0 0 1 -20 20 h -15 z" fill="none" stroke="#3B82F6" stroke-width="8" />
+          <path d="M55 30 l 12 40 l 12 -40" fill="none" stroke="#22D3EE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="assets/resume/Divyansh-Verma-Resume.pdf" class="btn btn-outline" download>Resume</a></li>
+        </ul>
+      </nav>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text reveal">
+          <span class="hero-greeting">Hello, I'm</span>
+          <h1 class="hero-title">Divyansh<br>Verma</h1>
+          <h2 class="hero-subtitle">AI & ML Student <span style="color:var(--text-muted)">•</span> Software Developer</h2>
+          <p class="hero-desc">Building practical software and AI-driven solutions with a strong foundation in programming, problem solving, and machine learning.</p>
+          
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Explore My Work</a>
+            <a href="assets/resume/Divyansh-Verma-Resume.pdf" class="btn btn-outline" download>Download Resume</a>
+          </div>
+          
+          <div class="hero-social">
+            <a href="https://github.com/vdivyansh1210?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/divyansh-verma-595201329/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-visual-container reveal">
+          <svg class="hero-visual" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2563EB" stop-opacity="0.2" />
+                <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.2" />
+              </linearGradient>
+            </defs>
+            <!-- Orbit circles -->
+            <circle cx="250" cy="250" r="180" fill="none" stroke="#1E293B" stroke-width="1" stroke-dasharray="4 8" />
+            <circle cx="250" cy="250" r="120" fill="none" stroke="#1E293B" stroke-width="1" />
+            
+            <!-- Connection Lines -->
+            <path class="connection-line" d="M 250 130 L 150 200 L 200 320 L 300 320 L 350 200 Z" fill="none" stroke="#3B82F6" stroke-width="1" stroke-opacity="0.5" />
+            <path class="connection-line" d="M 150 200 L 250 250 L 350 200" fill="none" stroke="#22D3EE" stroke-width="1" stroke-opacity="0.5" />
+            <path class="connection-line" d="M 200 320 L 250 250 L 300 320" fill="none" stroke="#22D3EE" stroke-width="1" stroke-opacity="0.5" />
+            
+            <!-- Nodes -->
+            <circle class="node" cx="250" cy="130" r="4" fill="#2563EB" />
+            <circle class="node" cx="150" cy="200" r="4" fill="#2563EB" />
+            <circle class="node" cx="350" cy="200" r="4" fill="#2563EB" />
+            <circle class="node" cx="200" cy="320" r="4" fill="#2563EB" />
+            <circle class="node" cx="300" cy="320" r="4" fill="#2563EB" />
+            <circle class="node" cx="250" cy="250" r="4" fill="#22D3EE" />
+            
+            <!-- Central Label -->
+            <rect x="210" y="235" width="80" height="30" rx="4" fill="#111827" stroke="#1E293B" />
+            <text x="250" y="255" font-family="monospace" font-size="12" fill="#22D3EE" text-anchor="middle">AI / ML</text>
+            
+            <rect x="110" y="185" width="60" height="24" rx="4" fill="#111827" stroke="#1E293B" />
+            <text x="140" y="202" font-family="monospace" font-size="10" fill="#F8FAFC" text-anchor="middle">&lt;/&gt; Web</text>
+            
+            <rect x="320" y="185" width="60" height="24" rx="4" fill="#111827" stroke="#1E293B" />
+            <text x="350" y="202" font-family="monospace" font-size="10" fill="#F8FAFC" text-anchor="middle">{ } Data</text>
+            
+            <!-- Outer Monogram overlay -->
+            <path d="M 220 70 h 20 a 20 20 0 0 1 20 20 a 20 20 0 0 1 -20 20 h -20 z" fill="none" stroke="#F8FAFC" stroke-width="4" stroke-opacity="0.2" />
+            <path d="M 270 70 l 15 40 l 15 -40" fill="none" stroke="#F8FAFC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.2" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="reveal">About Me</h2>
+        <div class="about-content">
+          <div class="about-text reveal">
+            <p>I am a B.Tech Artificial Intelligence & Machine Learning student at Noida Institute of Engineering and Technology, with a deep passion for building robust software applications and data-driven AI solutions.</p>
+            <p>My technical journey is driven by practical problem-solving. I focus on core computer science fundamentals—Data Structures, Algorithms, and Object-Oriented Programming—and apply them to build full-stack web applications and machine learning models.</p>
+            <p>Whether I'm developing an educational dashboard or predicting environmental metrics using deep learning, I strive to write clean, maintainable code that delivers real value.</p>
+          </div>
+          <div class="about-cards reveal">
+            <div class="about-card">
+              <div class="about-card-title">Focus</div>
+              <div class="about-card-text">Software Engineering + AI/ML</div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-title">Education</div>
+              <div class="about-card-text">B.Tech AI & ML</div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-title">Location</div>
+              <div class="about-card-text">Greater Noida, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="reveal">Skills & Technologies</h2>
+        <div class="skills-grid reveal">
+          <div class="skill-category">
+            <div class="skill-number">01</div>
+            <h3 class="skill-title">Programming</h3>
+            <ul class="skill-list">
+              <li>Java</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <div class="skill-number">02</div>
+            <h3 class="skill-title">Core CS</h3>
+            <ul class="skill-list">
+              <li>Data Structures & Algorithms</li>
+              <li>Object-Oriented Programming</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <div class="skill-number">03</div>
+            <h3 class="skill-title">Web & DB</h3>
+            <ul class="skill-list">
+              <li>HTML & CSS</li>
+              <li>JavaScript</li>
+              <li>MySQL</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <div class="skill-number">04</div>
+            <h3 class="skill-title">AI / Machine Learning</h3>
+            <ul class="skill-list">
+              <li>Machine Learning & Deep Learning</li>
+              <li>Scikit-learn</li>
+              <li>TensorFlow & CNN & LSTM</li>
+              <li>NLP</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <div class="skill-number">05</div>
+            <h3 class="skill-title">Tools</h3>
+            <ul class="skill-list">
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="reveal">Selected Work</h2>
+        <p class="projects-intro reveal">A selection of projects spanning software development, artificial intelligence, machine learning, and web applications.</p>
+        
+        <div class="projects-grid">
+          
+          <!-- Project 01: EduTrack -->
+          <div class="project-card featured reveal">
+            <div class="project-visual">
+              <span class="conceptual-label">Conceptual UI</span>
+              <svg width="100%" height="100%" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <!-- Dashboard Wireframe -->
+                <rect x="20" y="20" width="360" height="260" rx="8" fill="#0B1120" stroke="#1E293B" stroke-width="2" />
+                <rect x="20" y="20" width="360" height="40" rx="8" fill="#121A2A" />
+                <!-- Sidebar -->
+                <rect x="20" y="60" width="80" height="220" fill="#121A2A" stroke-right="#1E293B" />
+                <rect x="35" y="80" width="50" height="10" rx="2" fill="#3B82F6" />
+                <rect x="35" y="110" width="50" height="10" rx="2" fill="#1E293B" />
+                <rect x="35" y="140" width="50" height="10" rx="2" fill="#1E293B" />
+                <!-- Main Content -->
+                <text x="120" y="90" font-family="monospace" font-size="14" fill="#F8FAFC">Attendance Overview</text>
+                
+                <!-- Stat Cards -->
+                <rect x="120" y="110" width="110" height="60" rx="6" fill="#111827" stroke="#1E293B" />
+                <text x="130" y="130" font-family="sans-serif" font-size="10" fill="#94A3B8">Total Present</text>
+                <text x="130" y="155" font-family="sans-serif" font-size="20" fill="#22C55E">87%</text>
+                
+                <rect x="240" y="110" width="110" height="60" rx="6" fill="#111827" stroke="#1E293B" />
+                <text x="250" y="130" font-family="sans-serif" font-size="10" fill="#94A3B8">At Risk Students</text>
+                <text x="250" y="155" font-family="sans-serif" font-size="20" fill="#EF4444">03</text>
+                
+                <!-- Chart Area -->
+                <rect x="120" y="190" width="230" height="70" rx="6" fill="#111827" stroke="#1E293B" />
+                <!-- Line Chart Mock -->
+                <path d="M 130 240 L 160 230 L 190 235 L 220 210 L 250 220 L 280 200 L 310 210 L 340 195" fill="none" stroke="#3B82F6" stroke-width="2" />
+                <circle cx="340" cy="195" r="3" fill="#3B82F6" />
+              </svg>
+            </div>
+            <div class="project-content">
+              <div class="project-number">01</div>
+              <h3 class="project-title">EduTrack: Smart Attendance & Analytics System</h3>
+              <span class="project-category">FULL-STACK WEB APPLICATION</span>
+              <p class="project-desc">A full-stack web application designed for educational institutions to manage student attendance, organize courses, share documents, and generate predictive AI insights to identify at-risk students.</p>
+              <div>
+                <button class="btn btn-outline" data-modal-target="modal-edutrack">View Details</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="secondary-projects">
+            <!-- Project 02: AQI -->
+            <div class="project-card reveal">
+              <div class="project-visual">
+                <span class="conceptual-label">AI Visual</span>
+                <svg width="100%" height="100%" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Abstract CNN to LSTM -->
+                  <!-- Sky Image Node -->
+                  <rect x="40" y="60" width="60" height="60" rx="4" fill="#38BDF8" stroke="#0284C7" stroke-width="2" />
+                  <circle cx="55" cy="75" r="5" fill="#FFF" />
+                  <path d="M 40 100 L 60 80 L 80 100 L 100 80 L 100 120 L 40 120 Z" fill="#0369A1" />
+                  
+                  <!-- Flow arrows -->
+                  <path d="M 110 90 L 130 90" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="2 2" />
+                  
+                  <!-- CNN Layers -->
+                  <rect x="140" y="70" width="10" height="40" rx="2" fill="#2563EB" />
+                  <rect x="155" y="75" width="10" height="30" rx="2" fill="#3B82F6" />
+                  <rect x="170" y="80" width="10" height="20" rx="2" fill="#60A5FA" />
+                  
+                  <path d="M 190 90 L 210 90" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="2 2" />
+                  
+                  <!-- LSTM / Output -->
+                  <rect x="220" y="75" width="40" height="30" rx="4" fill="#111827" stroke="#22D3EE" stroke-width="2" />
+                  <text x="240" y="94" font-family="monospace" font-size="10" fill="#22D3EE" text-anchor="middle">AQI</text>
+                  
+                  <text x="70" y="140" font-family="sans-serif" font-size="10" fill="#64748B" text-anchor="middle">Sky Img</text>
+                  <text x="160" y="140" font-family="sans-serif" font-size="10" fill="#64748B" text-anchor="middle">CNN</text>
+                  <text x="240" y="140" font-family="sans-serif" font-size="10" fill="#64748B" text-anchor="middle">LSTM</text>
+                </svg>
+              </div>
+              <div class="project-content">
+                <div class="project-number">02</div>
+                <h3 class="project-title">AQI Prediction</h3>
+                <span class="project-category">AI • COMPUTER VISION • DEEP LEARNING</span>
+                <p class="project-desc">A computer vision-driven system to estimate and forecast Air Quality Index using sky images, CNN-based visual analysis, ensemble heuristics, and LSTM-based time-series forecasting.</p>
+                <div>
+                  <button class="btn btn-outline" data-modal-target="modal-aqi">View Details</button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Project 03: Hotel Management -->
+            <div class="project-card reveal">
+              <div class="project-visual">
+                <span class="conceptual-label">Conceptual DB</span>
+                <svg width="100%" height="100%" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Abstract Database / Application logic -->
+                  <path d="M 150 40 C 200 40 200 60 200 60 L 200 140 C 200 140 200 160 150 160 C 100 160 100 140 100 140 L 100 60 C 100 60 100 40 150 40 Z" fill="#0F172A" stroke="#3B82F6" stroke-width="2" />
+                  <path d="M 100 60 C 100 80 200 80 200 60" fill="none" stroke="#3B82F6" stroke-width="2" />
+                  <path d="M 100 100 C 100 120 200 120 200 100" fill="none" stroke="#3B82F6" stroke-width="2" />
+                  <path d="M 100 140 C 100 160 200 160 200 140" fill="none" stroke="#3B82F6" stroke-width="2" />
+                  
+                  <!-- Connections -->
+                  <circle cx="50" cy="100" r="15" fill="#1E293B" />
+                  <text x="50" y="104" font-family="monospace" font-size="10" fill="#F8FAFC" text-anchor="middle">UI</text>
+                  <path d="M 70 100 L 95 100" fill="none" stroke="#64748B" stroke-width="2" />
+                  
+                  <rect x="230" y="85" width="40" height="30" rx="4" fill="#1E293B" />
+                  <text x="250" y="104" font-family="monospace" font-size="10" fill="#F8FAFC" text-anchor="middle">SQL</text>
+                  <path d="M 205 100 L 225 100" fill="none" stroke="#64748B" stroke-width="2" />
+                </svg>
+              </div>
+              <div class="project-content">
+                <div class="project-number">03</div>
+                <h3 class="project-title">Hotel Management System</h3>
+                <span class="project-category">JAVA • SOFTWARE DEVELOPMENT • DATABASE</span>
+                <p class="project-desc">A desktop application designed to manage hotel operations including room booking, customer management, billing, employee management, and report generation.</p>
+                <div>
+                  <button class="btn btn-outline" data-modal-target="modal-hotel">View Details</button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2 class="reveal">Experience</h2>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-date">September 2025 – October 2025</div>
+            <h3 class="timeline-title">Machine Learning Intern</h3>
+            <div class="timeline-subtitle">CodSoft (Virtual / Remote)</div>
+            <ul class="timeline-list">
+              <li>Supported work in Movie Genre Classification, Credit Card Fraud Detection, and Customer Churn Prediction.</li>
+              <li>Handled data preprocessing and feature engineering to prepare robust datasets.</li>
+              <li>Contributed to model development and optimization tasks.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <h2 class="reveal">Education</h2>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-date">2023 – Present</div>
+            <h3 class="timeline-title">B.Tech in Artificial Intelligence & Machine Learning</h3>
+            <div class="timeline-subtitle">Noida Institute of Engineering and Technology</div>
+          </div>
+          
+          <div class="timeline-item" style="margin-top: 2rem;">
+            <div class="timeline-date">2020 – 2023</div>
+            <h3 class="timeline-title">Senior Secondary (XII) & Secondary (X)</h3>
+            <div class="timeline-subtitle">Dr. Virendra Swarup Public School</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications">
+      <div class="container">
+        <h2 class="reveal">Certifications</h2>
+        <div class="cert-grid reveal">
+          <div class="cert-card">
+            <h3 class="cert-title">Building Machine Learning Systems with TensorFlow</h3>
+            <span class="cert-issuer">Infosys Springboard</span>
+          </div>
+          <div class="cert-card">
+            <h3 class="cert-title">Deep Learning for Developers</h3>
+            <span class="cert-issuer">Infosys Springboard</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container contact-content reveal">
+        <h2>Let's Build Something Useful</h2>
+        <p class="contact-desc">Want to know more? Explore my experience, education and technical background.</p>
+        
+        <div class="contact-actions">
+          <a href="assets/resume/Divyansh-Verma-Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+          <a href="mailto:vdivyansh1235@gmail.com" class="btn btn-outline">Send an Email</a>
+        </div>
+        
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:vdivyansh1235@gmail.com" class="contact-value">vdivyansh1235@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Phone</span>
+            <a href="tel:+916387569484" class="contact-value">+91 6387569484</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Greater Noida, Uttar Pradesh</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Profiles</span>
+            <div style="display:flex;gap:1rem;">
+              <a href="https://github.com/vdivyansh1210?tab=repositories" target="_blank" rel="noopener noreferrer" class="contact-value">GitHub</a>
+              <a href="https://www.linkedin.com/in/divyansh-verma-595201329/" target="_blank" rel="noopener noreferrer" class="contact-value">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <svg class="logo-svg" style="width: 24px; height: 24px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <rect width="100" height="100" fill="#070B14" rx="20" />
+            <path d="M25 30 h 15 a 20 20 0 0 1 20 20 a 20 20 0 0 1 -20 20 h -15 z" fill="none" stroke="#3B82F6" stroke-width="8" />
+            <path d="M55 30 l 12 40 l 12 -40" fill="none" stroke="#22D3EE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="footer-name">Divyansh Verma</span>
+        </div>
+        <span class="footer-credit">Built with HTML, CSS & JavaScript</span>
+        <span class="footer-credit">&copy; 2026 Divyansh Verma</span>
+      </div>
+      
+      <div class="footer-right">
+        <a href="https://github.com/vdivyansh1210?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/divyansh-verma-595201329/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <button class="back-to-top" aria-label="Back to top">
+          Back to Top 
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  
+  <!-- EduTrack Modal -->
+  <div id="modal-edutrack" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-edutrack-title" aria-hidden="true">
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="category">FULL-STACK WEB APPLICATION</span>
+          <h3 id="modal-edutrack-title">EduTrack</h3>
+          <p>A full-stack web application designed for educational institutions to manage student attendance, organize courses, share documents, and generate predictive AI insights to identify at-risk students.</p>
+          
+          <h4>Features & Highlights</h4>
+          <ul class="modal-list">
+            <li><strong>Role-Based Access Control:</strong> Admin, Teacher, and Student roles with secure JWT authentication.</li>
+            <li><strong>Attendance Management:</strong> Tracking for Present, Absent, and Late records, featuring attendance dashboards and trends.</li>
+            <li><strong>AI Attendance Analytics:</strong> Identification of students at risk of falling below the critical 75% attendance threshold.</li>
+            <li><strong>Course Management:</strong> Faculty assignment and student enrollment portals.</li>
+            <li><strong>Document Sharing:</strong> Secure file upload and download functionalities.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AQI Modal -->
+  <div id="modal-aqi" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-aqi-title" aria-hidden="true">
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="category">AI • COMPUTER VISION • DEEP LEARNING (2026)</span>
+          <h3 id="modal-aqi-title">AQI Prediction using Computer Vision and LSTM</h3>
+          <p>A computer vision-driven system to estimate and forecast Air Quality Index using sky images, CNN-based visual analysis, ensemble heuristics, and LSTM-based time-series forecasting.</p>
+          
+          <h4>Methodology</h4>
+          <ul class="modal-list">
+            <li><strong>Data Processing:</strong> Sky image preprocessing combined with weather and pollution data integration.</li>
+            <li><strong>Visual Analysis:</strong> CNN-based analysis to extract critical features from environmental images.</li>
+            <li><strong>Forecasting:</strong> LSTM time-series modeling for predictive analysis of air quality trends.</li>
+            <li><strong>Evaluation:</strong> Comprehensive data analysis and model evaluation techniques.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hotel Modal -->
+  <div id="modal-hotel" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-hotel-title" aria-hidden="true">
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-content">
+        <div class="modal-body">
+          <span class="category">JAVA • SOFTWARE DEVELOPMENT • DATABASE (2025)</span>
+          <h3 id="modal-hotel-title">Hotel Management System</h3>
+          <p>A desktop application designed to manage hotel operations including room booking, customer management, billing, employee management and report generation.</p>
+          
+          <h4>Features & Technical Details</h4>
+          <ul class="modal-list">
+            <li><strong>Core Features:</strong> Room booking, automated billing, customer management, and comprehensive report generation.</li>
+            <li><strong>Employee Management:</strong> Module to manage staff details and roles effectively.</li>
+            <li><strong>Database Integration:</strong> Reliable data storage and retrieval via MySQL and JDBC.</li>
+            <li><strong>Software Design:</strong> Built with robust object-oriented application structure in Java.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
